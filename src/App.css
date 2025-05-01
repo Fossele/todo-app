@@ -1,38 +1,233 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0; 
+}
+
+
 .App {
+  text-align: center;
+ background-color: black;
+ width: 100%;
+ height: 100%;
+ 
+}
+
+p,s{
+  text-indent: 0cap;
+  width: 85%;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+}
+img{
+  width: 1920px;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.newCon{
+  position: fixed;
+  left: 40%;
+  top: 20%;
+}
+
+
+.upCon{
+  box-shadow: 1px 1px 5px rgb(80, 75, 75) ;
+ display: flex;
+ flex-direction: column;
+ min-height: 20px;
+   margin: 40px 0 0 0;
+}
+.Con {
+  
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  
+  height: auto;
+  width: 500px;
+  background-color: white;
+  color: black;
+ 
+   border-radius: 4px;
+overflow: visible;
+  }
+
+.bCon {
+  
+ 
+
+  display: flex;
+  flex-direction: column;
+
+  height: auto;
+  width: 500px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+}
+
+
+
+
+
+.header{
+  display: flex;
+  padding: 10px;
+  width: inherit;
+  height: inherit;
+  justify-content: space-between;
+  align-content: center;
+  background-color: none;
+}
+
+.forChange , .enter{
+  display: flex;
+   width: inherit;
+  height: inherit;
+}
+
+.enter{
+justify-content: flex-start;
+align-content: center;
+gap: 1rem;
+}
+.forChange{
+  justify-content: space-between;
+  align-content: center;
+  gap: 0rem;
+ padding: 0 4px;
+ background-color: inherit;
+ color: inherit;
+}
+
+.Modification{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Modification div{
+  margin: 0 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.full{
+  /*display: flex;*/
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: baseline;
+  background-color: inherit;
+  color: inherit; 
+  margin-top: 0;
+ 
+  margin-bottom: 0px;
+  border-radius: 15px;
+}
+
+.full div{
+  width:  100%;
+
+}
+
+div{
+  color: inherit;
+}
+
+.full .inside{
+ border: 1px #282c34 solid;
+ width: inherit;
+
+}
+
+
+button.all:hover,.active:hover,.complete:hover{
+  font-size: 18px;
+  color: blue;
+}
+
+ button.all,button.active,button.complete, .cross{
+  background-color: inherit;
+  color: inherit;
+  border: none;
+ padding:0px 5px;
+ font-size: 16px;
+}
+
+.upload {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  margin: 0 0px 0px 0;
+  background-color: inherit;
+  border-radius: 4px;
+}
+
+textarea{
+  resize: none;
+  caret-color: blue;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  background-color: inherit;
+  color: inherit;
+ /* height: 25px;*/
+  width: 100%;
+  overflow: hidden;
+  margin: -5px 0px;
+ line-height: 1;
+ vertical-align: top;
+ text-align: left;
+}
+
+
+textarea:focus,textarea:hover{
+  outline: none;
+  border:none;
+}
+textarea::placeholder{
+  text-align: left;
+}
+
+.todo{
   color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid gray;
+  padding: 10px;
+  gap: 1rem;
+  width: 100%;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.but{
+border: none;
+outline: none;
+background-color: inherit;
 }
+/*.Con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 1000px;
+  color: white;
+  background-color: black;
+}*/
