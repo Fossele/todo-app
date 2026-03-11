@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+
+}
+
+p,
+s {
+  text-indent: 0cap;
+  width: 85%;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: 4%;
+  padding: 0;
+  margin: 0;
+
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.app-container {
+  position: fixed;
+  left: 40%;
+  top: 20%;
+}
+
+
+.task-container {
+  box-shadow: 1px 1px 5px rgb(80, 75, 75);
+  display: flex;
+  flex-direction: column;
+  min-height: 20px;
+  margin: 40px 0 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 500px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: visible;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+.header {
+  display: flex;
+  padding: 10px;
+  width: inherit;
+  height: inherit;
+  justify-content: space-between;
+  align-content: center;
+  background-color: none;
+}
+
+.task-ctn-footer,.enter {
+  display: flex;
+  width: inherit;
+  height: inherit;
+}
+
+.enter {
+  justify-content: flex-start;
+  align-content: center;
+  gap: 1rem;
+}
+
+.task-ctn-footer {
+  justify-content: space-between;
+  align-content: center;
+  gap: 0rem;
+  padding: 0 4px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.Modification {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.Modification div {
+  margin: 0 10px;
+}
+
+
+.list-container {
+  /*display: flex;*/
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: inherit;
+  color: inherit;
+  margin-top: 0;
+
+  margin-bottom: 0px;
+  border-radius: 15px;
+}
+
+.list-container div {
+  width: 100%;
+
+}
+
+div {
+  color: inherit;
+}
+
+.list-container .inside {
+  border: 1px #282c34 solid;
+  width: inherit;
+
+}
+
+
+button.all:hover,
+.active:hover,
+.complete:hover {
+  font-size: 18px;
+  color: blue;
+}
+
+button.all,
+button.active,
+button.complete,
+.cross {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  padding: 0px 5px;
+  font-size: 16px;
+}
+
+.input-task {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  margin: 0 0px 0px 0;
+  background-color: inherit;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+  caret-color: blue;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  background-color: inherit;
+  color: inherit;
+  /* height: 25px;*/
+  width: 100%;
+  overflow: hidden;
+  margin: -5px 0px;
+  line-height: 1;
+  vertical-align: top;
+  text-align: left;
+}
+
+
+textarea:focus,
+textarea:hover {
+  outline: none;
+  border: none;
+}
+
+textarea::placeholder {
+  text-align: left;
+}
+
+.todo {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 10px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid gray;
+  padding: 10px;
+  gap: 1rem;
+  width: 100%;
+
+}
+
+
+.but {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+/*.Con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 1000px;
+  color: white;
+  background-color: black;
+}*/
